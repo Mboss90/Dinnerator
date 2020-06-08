@@ -8,7 +8,7 @@ Ever have a hard time deciding what you should be eating? You know you're hungry
 Sometimes deciding what you want to eat can be hard. Or maybe you're eating with someone that can't decide and you've run out of suggestions.
 
 # Solution
-Dinnerator grabs preivously stored recipes that meet your qualifications. If it's for yourself, you can generate until something really pops for you. If it's for someone else, eliminate the stress of thinking of something to appease them.
+Dinnerator grabs preivously stored recipes that meet your qualifications. If it's for yourself, you can generate until something really pops for you. If it's for someone else, eliminate the stress of thinking of something to appease them. Find a recipe you like? Add it to Dinnerator so that it will join your list of possible recipes and enjoy again in the future!
 
 # Quote from You
 Dinnerate's quick generation of ingredients and recipes takes away the stress of dinner time. With Dinnerate dinner time is a happy time, every time.
