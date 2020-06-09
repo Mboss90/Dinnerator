@@ -2,12 +2,12 @@ const mongoose = require('mongoose');
 const connection = require('./connection.js');
 
 const mealSchema = mongoose.Schema({
-  id: Number,
   name: String,
-  ingredients: String,
-  vegetarian: Boolean,
-  vegan: Boolean,
-  recipeURL: String,
+  // ingredients: String,
+  vegetarian: String,
+  vegan: String,
+  protein: String,
+  recipeURL: String
 });
 
 const Meal = mongoose.model('Meal', mealSchema);
@@ -21,13 +21,13 @@ const getAllMeals = () => {
   });
 };
 
-const searchMealId = (id) => {
-  console.log('find Docs by Id invoked!');
+const searchMealByName = (name) => {
+  console.log('Searching for meal:', name);
   return new Promise((resolve, reject) => {
-    Meal.find({ id })
+    Meal.find({ name })
       .then((docs) => resolve(docs))
       .catch((err) => reject(err));
   });
 };
 
-module.exports = { getAllMeals, searchMealId };
+module.exports = { getAllMeals, searchMealByName };

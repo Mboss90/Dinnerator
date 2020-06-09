@@ -1,15 +1,10 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/dinnerator', { useMongoClient: true, useNewUrlParser: true });
+mongoose.connect('mongodb://localhost/dinnerator', { useMongoClient: true });
 
 const db = mongoose.connection;
 
-db.on('error', err => {
-  console.log(err);
-});
-
-db.on('connected', () => {
-  console.log('connected to Mongo');
-});
+db.on('error', () => console.error('Error loading Meals database'));
+db.once('open', () => console.log('Meals database connected'));
 
 module.exports = db;

@@ -17,9 +17,9 @@ app.get('/dinnerator', (req, res) => {
 });
 
 app.get('/:id/dinnerator', (req, res) => {
-  const mealId = req.params.id;
-  console.log(mealId);
-  database.searchMealId(mealId)
+  const mealName = req.params.name;
+  console.log(mealName);
+  database.searchMealByName(mealName)
     .then((results) => res.status(200).json(results))
     .catch((err) => res.status(400).json(err));
 });

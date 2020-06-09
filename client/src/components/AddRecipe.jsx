@@ -2,7 +2,7 @@ import React from "react";
 
 const addMeal = ({ handleSubmit }) => {
   return (
-    <div class="meal-form">
+    <div className="meal-form">
       <h2>Add New Meal</h2>
       <label>Name:
       <input type="text" id="mealName"></input>
@@ -11,10 +11,16 @@ const addMeal = ({ handleSubmit }) => {
       <input type="text" id="ingredients"></input>
       </label>
       <label>Is this dish Vegetarian?
-      <input type="text" id="vegetarian"></input>
+      <select name="vegetarian" className="vegetarianSelect" form="vegetarianForm">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
       </label>
       <label>Is this dish Vegan?
-      <input type="text" id="vegan"></input>
+      <select name="vegan" className="veganSelect" form="veganForm">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
       </label>
       <label>URL to Recipe:
       <input type="text" id="recipeURL"></input>
