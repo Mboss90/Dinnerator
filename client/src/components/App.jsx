@@ -5,6 +5,7 @@ import axios from 'axios';
 // Component Imports
 // import Header from './Header.jsx';
 import AddRecipe from './AddRecipe.jsx';
+import Header from './Header.jsx';
 import CurrentRecipe from './CurrentRecipe.jsx';
 import Sort from './Sort.jsx';
 
@@ -60,15 +61,14 @@ class App extends React.Component {
     console.log('Render did run and state:', Math.floor(Math.random() * this.state.meals.length));
     return (
       <div id="reactBody">
-        <div>
-          <CurrentRecipe current={this.state.meals[Math.floor(Math.random() * this.state.meals.length)]} />
-        </div>
-        <div>
-          <Sort />
-        </div>
-        <div>
-          <AddRecipe />
-        </div>
+        <img className="headerImage" src="electric-generator.png" alt="" />
+        <Header />
+        <CurrentRecipe current={this.state.meals[Math.floor(Math.random() * this.state.meals.length)]} />
+        <AddRecipe />
+        <Sort />
+        <div className='imageCredit'>Icons made by <a href="https://www.flaticon.com/authors/freepik"
+          title="Freepik">Freepik</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
       </div>
     )
   }

@@ -7,8 +7,8 @@ const CurrentRecipe = ({ current }) => {
       <h3>Current Recipe:</h3>
       <ul>
         <li>Dish: {current.name}</li>
-        <li>Is it vegetarian: {current.vegetarian}</li>
-        <li>Is it vegan: {current.vegan}</li>
+        <li>Is it Vegetarian: {current.vegetarian}</li>
+        <li>Is it Vegan: {current.vegan}</li>
         <li>Protein: {current.protein}</li>
         <li>
           <a href={current.recipeURL} className="recipeURL">URL to the full recipe</a>
