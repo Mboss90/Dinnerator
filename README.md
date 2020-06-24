@@ -1,8 +1,6 @@
 # Dinnerator
 MVP Project based on generating ideas of what to cook for dinner
 
-# Related Projects
-
 # Table of Contents
 1. Usage
 2. Requirements
@@ -20,5 +18,5 @@ An nvmrc file is included if using nvm.
 # Development
 - Installing Dependencies
   - From within the root directory:
-
+  - npm install
   - npm install -g webpack npm install
