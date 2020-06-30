@@ -1,10 +1,14 @@
 # Dinnerator
-MVP Project based on generating ideas of what to cook for dinner
+MVP Project based on generating ideas of what to cook for dinner using React, Node, and MongoDB
 
 # Table of Contents
-1. Usage
-2. Requirements
-3. Development
+1. Summary
+2. Usage
+3. Requirements
+4. Development
+
+# Summary
+Generates random dishes on refresh. Able to sort by dietary restrictions or common food allergies. Enter dishes with their related allegries or dietary restrictions to have them stored on MongoDB.
 
 # Usage
 npm run react-dev
