@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Need to look into how to scan websites for recipes. Possible by scanning URL? Investigate further.
+
 const CurrentRecipe = ({ current }) => {
   console.log('Current recipe log', current);
   return (

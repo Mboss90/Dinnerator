@@ -1,5 +1,8 @@
 import React from "react";
 
+// Need to make sure labels of vegetarian and vegan get flagged if sort function is to be implemented.
+// Need to make a bank of common food allergies
+
 const addMeal = ({ handleSubmit }) => {
   return (
     <div className="meal-form">
