@@ -1,3 +1,5 @@
+Need to review all Dependencies and make sure usage, requirements, and development are appropriately updated
+
 # Dinnerator
 MVP Project based on generating ideas of what to cook for dinner using React, Node, and MongoDB
 
